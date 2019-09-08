@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.div1 {
+  width: 760px;
+  height: 760px;
+  background-color: #eb4770;
+  margin: 20px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.div2 {
+  width: 720px;
+  height: 720px;
+  background-color: #eb6347;
+  margin: 20px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.div3 {
+  width: 680px;
+  height: 680px;
+  background-color: #eba747;
+  margin: 20px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.div4 {
+  width: 640px;
+  height: 640px;
+  background-color: #ebeb47;
+  margin: 20px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.div5 {
+  width: 600px;
+  height: 600px;
+  background-color: #a7eb47;
+  margin: 20px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.div6 {
+  width: 560px;
+  height: 560px;
+  background-color: #63eb47;
+  margin: 20px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.div7 {
+  width: 520px;
+  height: 520px;
+  background-color: #47eb70;
+  margin: 20px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.div8 {
+  width: 480px;
+  height: 480px;
+  background-color: #47ebb4;
+  margin: 20px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.div9 {
+  width: 440px;
+  height: 440px;
+  background-color: #47ddeb;
+  margin: 20px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.div10 {
+  width: 400px;
+  height: 400px;
+  background-color: #4799eb;
+  margin: 20px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.div11 {
+  width: 360px;
+  height: 360px;
+  background-color: #4755eb;
+  margin: 20px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.div12 {
+  width: 320px;
+  height: 320px;
+  background-color: #7e47eb;
+  margin: 20px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.div13 {
+  width: 280px;
+  height: 280px;
+  background-color: #c247eb;
+  margin: 20px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.div14 {
+  width: 240px;
+  height: 240px;
+  background-color: #eb47cf;
+  margin: 20px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.rainbow {
+  height: 400px;
+  width: 800px;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 200px;
+}
+
+.div14 {
+  background-color: #fff;
+}
+
+/*# sourceMappingURL=/main.39afc03c.css.map */
