@@ -1,12 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
 </head>
-<body>
-  <h1>一次新的提交</h1>
+
+<body style="display:flex;justify-content: center">
+  <pre>
+    <style contenteditable="true">
+      style{
+        display: block;
+        width: 40%;
+        max-width: 400px;
+        padding-right: 100px;
+      }
+      .container{
+        width: 60%;
+        max-width: 600px;
+      }
+      .edit{
+        border: 3px dashed pink;
+        outline: none;
+      }
+
+      h1{
+        color: pink;
+      }
+    </style>
+  </pre>
+  <div class="container">
+    <h1>一次新的提交</h1>
+    <h3>测试debug合并master</h3>
+    <aside hidden>用一个侧边栏看看能不能合并的时候不出现分支的commits</aside>
+    <footer>
+      <p>不骗你我真的不想要commit记录,谢谢,请你别出现</p>
+      <a href="http://gitbook.liuhui998.com/4_3.html" target="_blank">戳这里看rebase</a>
+    </footer>
+    <article>切回master的修改</article>
+    <section contenteditable="true" class="edit">
+      添加了一个可以编辑的section<br />
+      这里是可以编辑的
+    </section>
+    <footer>
+      http-server . -c-1<br />
+      -c-1:不要缓存
+    </footer>
+  </div>
 </body>
+
 </html>
