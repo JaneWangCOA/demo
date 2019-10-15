@@ -8,17 +8,25 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <div id="canvas">
-    </div>
+    <canvas id="canvas" width="" height="">
+
+    </canvas>
     <script>
-        canvas.onclick=(e)=>{
-            console.log(e.clientX)
-            console.log(e.clientY)
-            let div = document.createElement('div')
-            div.className = "dot"
-            div.style.top = e.clientY + 'px'
-            div.style.left = e.clientX + 'px'
-            canvas.appendChild(div)
+        canvas.width = document.documentElement.clientWidth
+        canvas.height = document.documentElement.clientHeight
+        let ctx = canvas.getContext("2d")
+        let painting = false
+        ctx.fillStyle = "pink"
+        canvas.onmousedown = ()=>{
+            painting = true
+        }
+        canvas.onmousemove = (e)=>{
+            if(painting === true){
+                ctx.fillRect(e.clientX-3,e.clientY-3,6,6)
+            }
+        }
+        canvas.onmouseup = ()=>{
+            painting = false
         }
     </script>
 </body>

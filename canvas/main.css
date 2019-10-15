@@ -5,8 +5,7 @@
 }
 
 #canvas{
-    height: 100vh;
-    border: 20px solid pink;
+    display: block;
 }
 
 .dot{
