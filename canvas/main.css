@@ -1,0 +1,21 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+#canvas{
+    height: 100vh;
+    border: 20px solid pink;
+}
+
+.dot{
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border: 1px solid pink;
+    margin-left: -3px;
+    margin-top: -3px;
+    border-radius: 50%;
+    background-color: pink;
+}
