@@ -15,19 +15,42 @@
         canvas.width = document.documentElement.clientWidth
         canvas.height = document.documentElement.clientHeight
         let ctx = canvas.getContext("2d")
-        let painting = false
         ctx.fillStyle = "pink"
-        canvas.onmousedown = ()=>{
-            painting = true
+        ctx.lineWidth = 6
+        ctx.lineJoin = "round"
+        ctx.lineCap = "round"
+        let painting = false
+        let isTouchDevice = "ontouchstart" in document.documentElement
+        let drawLine = function(x1,y1,x2,y2){
+            ctx.beginPath()
+            ctx.moveTo(x1,y1)
+            ctx.lineTo(x2,y2)
+            ctx.stroke()
         }
-        canvas.onmousemove = (e)=>{
-            if(painting === true){
-                ctx.fillRect(e.clientX-3,e.clientY-3,6,6)
+        if(isTouchDevice){
+            canvas.ontouchstart = (e) => {
+                last = [e.touches[0].clientX,e.touches[0].clientY]
+            }
+            canvas.ontouchmove = (e) => {
+                drawLine(last[0],last[1],e.touches[0].clientX,e.touches[0].clientY)
+                last = [e.touches[0].clientX,e.touches[0].clientY]
+            }
+        }else{
+            canvas.onmousedown = (e)=>{
+                painting = true
+                last = [e.clientX,e.clientY]
+            }
+            canvas.onmousemove = (e)=>{
+                if(painting === true){
+                    drawLine(last[0],last[1],e.clientX,e.clientY)
+                    last = [e.clientX,e.clientY]
+                }
+            }
+            canvas.onmouseup = ()=>{
+                painting = false
             }
         }
-        canvas.onmouseup = ()=>{
-            painting = false
-        }
+        
     </script>
 </body>
 </html>
