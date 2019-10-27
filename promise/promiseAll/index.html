@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="z-ch">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Promise和回调在流程上的区别</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    body{
+      background-image: url('./images/hand.png');
+      background-size: auto 100%;
+      background-color: #fafafa;
+      padding-bottom: 200px;
+    }
+    .hand{
+      position: fixed;
+      bottom: 0px;
+      left:0px;
+      width: 100%;
+      height: auto;
+    }
+    #el{
+      display: block;
+      position:absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+      z-index: 1;
+      width: auto;
+      height: 30%;
+      line-height: 100px;
+      text-align: center;
+      color: #f4f4f4;
+      font-weight: bold;
+      font-size: 16px;
+      letter-spacing: 0.02em;
+      border-radius: 5px;
+    }
+    .cover{
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+      z-index: 2;
+      width: 180px;
+      height: 80px;
+      line-height: 80px;
+      text-align: center;
+      letter-spacing: 0.3em;
+      font-size: 16px;
+      font-weight: bold;
+      border:none;
+      background-color:rgb(226, 204, 204);
+      color: #220f0f;
+      border-radius: 5px;
+      box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .78);
+      outline: none;
+      opacity: 0.8;
+      transition: all 6s ease-in;
+    }
+    .coverB{
+      opacity: 0;
+    }
+    img{
+      width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <div id="container" class="container"> 
+    <img class="hand" src="./images/hand.png" alt="">
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
