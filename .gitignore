@@ -1,1 +1,3 @@
-*/node_moudle
+*/node_moudles
+*.DS_Store
+*.cache
