@@ -1,0 +1,8 @@
+{
+  "name": "大强",
+  "age" : 48,
+  "height ": 200,
+  "money": null,
+  "handsome": false,
+  "children": ["小微","小芝","小刚"]
+}
