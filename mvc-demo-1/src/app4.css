@@ -1,0 +1,30 @@
+#div4{
+ border:2px solid rosybrown;
+  height: 50vh;
+  width: 50vw;
+  position: relative;
+}
+
+#div4 .circle{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: pink;
+}
+
+@keyframes change{
+  0%{
+    background: pink;
+  }
+  100%{
+    background: yellowgreen;
+  }
+}
+
+#div4 .circle.active{
+  animation: change 3s linear infinite alternate-reverse;
+}

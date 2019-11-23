@@ -1,0 +1,182 @@
+blockquote,
+body,
+button,
+dd,
+dl,
+dt,
+fieldset,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+input,
+legend,
+li,
+ol,
+p,
+pre,
+td,
+textarea,
+th,
+ul {
+  margin: 0;
+  padding: 0;
+}
+body,
+button,
+input,
+select,
+textarea {
+  font: 12px/1.5 "PingFang SC", "Source Han Sans CN", "Noto Sans", "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial,"Liberation Sans", "Hiragino Sans GB", "Noto Sans CJK SC", "Source Han Sans SC", "Source Han Sans CN","Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp",sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+}
+address,
+cite,
+dfn,
+em,
+var {
+  font-style: normal;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: courier new, courier, monospace;
+}
+small {
+  font-size: 12px;
+}
+ol,
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+sup {
+  vertical-align: text-top;
+}
+sub {
+  vertical-align: text-bottom;
+}
+legend {
+  color: #000;
+}
+fieldset,
+img {
+  border: 0;
+}
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+}
+button {
+  border-radius: 0;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+#div1{
+  height: 50vh;
+  width: 50vw;
+  border: 2px solid palegoldenrod;
+}
+#div2{
+  border: 2px solid aquamarine;
+  height: 50vh;
+  width: 50vw;
+}
+
+#div2 .tab-bar{
+  display: flex;
+}
+
+#div2 .tab-bar>li{
+  border: 3px solid darkkhaki;
+  width: 50%;
+}
+#div2 .tab-bar>li.selected{
+  background-color: darkkhaki;
+}
+
+#div2 .tab-content>li{
+  display: none;
+}
+
+#div2 .tab-content>li.active{
+  display: block;
+}
+#div3 {
+  height: 50vh;
+  width: 50vw;
+  border: 2px solid salmon;
+  position: relative;
+}
+
+#div3 .square{
+  width: 10vw;
+  height: 10vh;
+  background-color: red;
+  position: absolute;
+  top: 15vw;
+  left: 15vw;
+}
+
+#div3 .square.active{
+ transform:translateX(100px)
+}
+#div4{
+ border:2px solid rosybrown;
+  height: 50vh;
+  width: 50vw;
+  position: relative;
+}
+
+#div4 .circle{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: pink;
+}
+
+@keyframes change{
+  0%{
+    background: pink;
+  }
+  100%{
+    background: yellowgreen;
+  }
+}
+
+#div4 .circle.active{
+  animation: change 3s linear infinite alternate-reverse;
+}
+.page{
+  display: flex;
+  flex-wrap:wrap;
+}
+
+*,*:before,*:after{
+  box-sizing: border-box;
+}
+
+/*# sourceMappingURL=/main.1f19ae8e.css.map */
