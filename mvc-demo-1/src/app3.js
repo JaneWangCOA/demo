@@ -1,30 +1,28 @@
 import $ from 'jquery'
 import "./app3.css"
 
+
+const html = `
+<div id="div3">
+<div class="square">123</div>
+</div>
+`
+
+const $element = $(html).appendTo($('body>.page'))
 const $square = $('#div3 .square')
 
 let position = localStorage.getItem('position') || 'left'
 
-let point = function(position){
-  if(position === 'left'){
-    $square.removeClass('active')
-    position = 'right'
-  }else{
-    $square.addClass('active')
-    position = 'left'
-  }
-  console.log(position)
-}
+$square.toggleClass('active',position)
 
 $square.on('click',()=>{
-  if(position === 'right'){
+  if(position){
     $square.removeClass('active')
-    position = 'left'
+    position = false
   }else{
     $square.addClass('active')
-    position = 'right'
+    position = true
   }
   localStorage.setItem('position',position)
 })
 
-point(position)
