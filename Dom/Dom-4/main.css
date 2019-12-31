@@ -1,0 +1,32 @@
+#heart{
+  height: 150px;
+  width: 150px;
+  position:absolute;
+
+  background-color: red;
+  border-bottom-right-radius: 10px;
+  transform: rotate(45deg)
+}
+
+#heart::after{
+  width: 150px;
+  height: 150px;
+  background-color: red;
+  content:'';
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+  left: -75px;
+  top: 0;
+}
+#heart::before{
+  width: 150px;
+  height: 150px;
+  background-color: red;
+  content:'';
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+  left: 0;
+  top: -75px;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>事件委托</title>
+</head>
+<body>
+  <div>
+    <ul>
+      <li>我是一个li<span>1</span></li>
+      <li>我是一个li<span>2</span></li>
+      <li>我是一个li<span>3</span></li>
+      <li>我是一个li<span>4</span></li>
+      <li>我是一个li<span>5</span></li>
+      <li>我是一个li<span>6</span></li>
+      <li>我是一个li<span>7</span></li>
+      <li>我是一个li<span>8</span></li>
+      <li>我是一个li<span>9</span></li>
+      <li>我是一个li<span>10</span></li>
+      <li>我是一个li<span>11</span></li>
+      <li>我是一个li<span>12</span></li>
+    </ul>
+  </div>
+  <script>
+    let ul = document.getElementsByTagName('ul')[0]
+    console.log(ul)
+    ul.addEventListener('click',e => {
+      console.log(e.target.tagName.toLowerCase())
+    })
+  </script>
+</body>
+</html>
